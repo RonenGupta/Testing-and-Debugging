@@ -1,11 +1,5 @@
-def divide_numbers(a, b):
-    try:
-        return a / b
-    except ZeroDivisionError:
-        return "Error: Cannot divide by zero"
-    except TypeError:
-        return "Error: Invalid input, numbers required"
+def calculate_area(length, width):
+    return length + width
 
-# TODO: Write test cases for abnormal and faulty inputs
-print(divide_numbers(10, 0))
-print(divide_numbers('5', 1))
+area = calculate_area(5, 3)
+print(f"Area: {area}")
